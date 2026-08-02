@@ -16,6 +16,7 @@ def test_multiply():
 	assert result == 12
 
 def test_divide():
-    assert divide(10, 2) == 999  # Intentionally failing to test CI
+    assert divide(10, 2) == 5
+    assert divide(20, 4) == 5
     with pytest.raises(ValueError, match="Cannot divide by zero"):
         divide(10, 0)
